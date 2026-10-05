@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Apuração SC · Fabio Botelho 20020</title>
+<style>body{margin:0;background:#0f2338;color:#eef3f8;font:20px Segoe UI,sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;text-align:center}</style>
+</head><body><p id="m">Abrindo a apuração…</p>
+<script>
+fetch("url.json?"+Date.now(),{cache:"no-store"}).then(r=>r.json()).then(j=>{location.replace(j.url)})
+.catch(()=>{document.getElementById("m").textContent="Apuração temporariamente indisponível. Tente novamente em instantes."});
+</script></body></html>
